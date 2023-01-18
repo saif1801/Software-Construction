@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Create Notification</title>
+    <style>
+        .header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    }
+.header h5 {
+    margin: 0;
+    margin-right: auto;
+}
+.header .menu-items {
+    display: flex;
+}
+.header .menu-items a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+        .create-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        .create-form h2 {
+            margin-bottom: 30px;
+        }
+        .create-form button {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head> 
+  <body>
+    <div class="header">
+        <div class="menu-items">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <h5>Department Name</h5>
+    </div>
+    <div class="create-form">
+        <h2>Create a New Notification</h2>
+        <form action="create_notification.php" method="post" class="form-group">
+            <label for="notificationID">ID:</label>
+            <input type="text" name="notificationID" id="notificationID" class="form-control"><br>
+            <label for="type">Type:</label>
+            <input type="text" name="type" id="type" class="form-control"><br>
+            <label for="description">Description:</label>
+            <input type="text" name="description" id="description" class="form-control"><br>
+            <label for="fileLink">File Link:</label>
+            <input type="text" name="fileLink" id="fileLink" class="form-control">
+            <br>
+            <button type="submit" class="btn">Create Notification</button>
+        </form>
+    </div>
+  </body>
+</html>

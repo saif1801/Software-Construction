@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Program</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .create-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        .create-form h2 {
+            margin-bottom: 30px;
+        }
+        .create-form button {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="create-form">
+        <h2>Create a New Program</h2>
+        <form action="create_program.php" method="post" class="form-group">
+            <label for="programId">Program ID:</label>
+            <input type="text" id="programId" name="programId" class="form-control">
+            <br>
+            <label for="duration">Duration:</label>
+            <input type="text" id="duration" name="duration" class="form-control">
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="form-control">
+            <br>
+            <button type="submit" class="btn">Create Program</button>
+        </form>
+    </div>
+</body>
+</html>
+
+       

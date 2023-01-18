@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add New Teacher</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <style>
+    .header {
+      background-color: black;
+      color: white;
+    }
+    .btn-black {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="header d-flex justify-content-between">
+    <div class="p-2">Department Name</div>
+    <div class="p-2">
+      <a href="#">Menu Option 1</a>
+      <a href="#">Menu Option 2</a>
+      <a href="#">Menu Option 3</a>
+    </div>
+  </div>
+  <div class="text-center" style="margin-top: 50px">
+    <h1>Create a new Teacher</h1>
+  </div>
+  <form class="container" action="create_teacher.php" method="post">
+    <div class="form-group">
+      <label for="id">ID:</label>
+      <input type="text" class="form-control" id="id" name="id">
+    </div>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" class="form-control" id="firstName" name="firstName">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" class="form-control" id="lastName" name="lastName">
+    </div>
+    <div class="form-group">
+      <label for="contact">Contact:</label>
+      <input type="text" class="form-control" id="contact" name="contact">
+    </div>
+    <div class="form-group">
+      <label for="degree">Degree:</label>
+      <input type="text" class="form-control" id="degree" name="degree">
+    </div>
+    <div class="form-group">
+      <label for="specialization">Specialization:</label>
+      <input type="text" class="form-control" id="specialization" name="specialization">
+    </div>
+    <input class="btn btn-black" type="submit" value="Add Teacher">
+  </form>
+</body>
+</html>
